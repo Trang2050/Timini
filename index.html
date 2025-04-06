@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timini - Điều Khiển Đèn LED Thông Minh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Timini - Điều Khiển Đèn LED Thông Minh</h1>
+    
+    <div class="container">
+        <div id="connection-status" class="connection-status disconnected">
+            Đang kết nối với thiết bị...
+        </div>
+        
+        <div class="control-panel">
+            <h2>Điều Khiển Đèn LED</h2>
+            <div class="led-status">
+                <div id="led-indicator" class="led-indicator"></div>
+                <span id="led-text">Đèn đang TẮT</span>
+            </div>
+            <div class="button-group">
+                <button id="btn-on" class="btn-on">BẬT ĐÈN</button>
+                <button id="btn-off" class="btn-off">TẮT ĐÈN</button>
+                <button id="btn-voice" class="btn-voice">NÓI VỚI TIMINI</button>
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <h2>Trò Chuyện Với Timini</h2>
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot-message">
+                    Chào bạn! Tôi là Timini - trợ lý thông minh của bạn. Tôi có thể giúp bạn điều khiển đèn LED hoặc trả lời các câu hỏi!
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Nhập lệnh hoặc câu hỏi...">
+                <button id="send-btn">Gửi</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
